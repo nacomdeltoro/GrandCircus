@@ -1,0 +1,15 @@
+-- auto-generated definition
+create table tasks
+(
+    id                 integer not null,
+    phone_no           bigint,
+    hibernate_sequence bigint,
+    taskdesc           varchar,
+    task               varchar,
+    taskstatus         boolean,
+    duedate            date
+);
+
+alter table tasks
+    owner to postgres;
+
